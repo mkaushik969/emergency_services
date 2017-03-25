@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/maps_dialog_sv"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:id="@+id/maps_details_name1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/maps_details_name1"
+                android:id="@+id/maps_details_name2"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/maps_details_name1"
+                android:layout_margin="10dp"
+                android:id="@+id/maps_details_address1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/maps_details_address1"
+                android:layout_below="@+id/maps_details_name2"
+                android:id="@+id/maps_details_address2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/maps_details_address2"
+                android:id="@+id/maps_details_loc1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/maps_details_loc1"
+                android:layout_below="@+id/maps_details_address2"
+                android:id="@+id/maps_details_loc2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No."
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/maps_details_loc2"
+                android:id="@+id/maps_details_cn1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/maps_details_cn1"
+                android:layout_below="@+id/maps_details_loc2"
+                android:id="@+id/maps_details_cn2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/maps_details_cn2"
+                android:id="@+id/maps_details_web1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/maps_details_web1"
+                android:layout_below="@+id/maps_details_cn2"
+                android:id="@+id/maps_details_web2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/maps_details_web2"
+                android:id="@+id/maps_details_rat1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/maps_details_rat1"
+                android:layout_below="@+id/maps_details_web2"
+                android:id="@+id/maps_details_rat2"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:id="@+id/maps_dialog_line"
+        android:layout_below="@+id/maps_dialog_sv"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/maps_dialog_button"
+        android:background="@color/white"
+        android:layout_below="@id/maps_dialog_line"
+        android:text="Ok"/>
+
+</RelativeLayout>

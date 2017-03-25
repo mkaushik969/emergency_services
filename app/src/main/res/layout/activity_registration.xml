@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.lifesaver.Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/format_name"
+            android:text="Format: First Last"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/name_field"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/format_phone"
+            android:text="Format: nnnnnnnnnn(10 digit number)"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/number_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="Contact Number"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            android:text="Blood Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bloodType" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:prompt="@string/spinner" />
+
+            <TextView
+                android:id="@+id/format_emergency_name"
+                android:text="Format: First Last"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="70dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/emname_feild"
+            android:hint="Emergency Contact Name" />
+        </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/format_emergency_number"
+                android:text="Format: nnnnnnnnnn(10 digit number)"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="70dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLines="1"
+            android:id="@+id/emnumber_feild"
+            android:hint="Emergency Contact Number"
+            android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/button1"
+        android:layout_weight="1"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/button2"
+        android:layout_weight="1"
+        android:text="Cancel"
+        android:onClick="onClick" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Update EM"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:id="@+id/ma_menu_update_em"/>
+    <item android:title="Update User"
+        app:showAsAction="never"
+        android:orderInCategory="101"
+        android:id="@+id/ma_menu_update_user"/>
+    <item android:title="Share Location"
+        app:showAsAction="never"
+        android:orderInCategory="102"
+        android:id="@+id/ma_menu_share_loc"/>
+
+</menu>
